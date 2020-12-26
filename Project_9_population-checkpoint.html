@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>2I &#8212; My Python-Programming Projects</title>
+    <title>&lt;no title&gt; &#8212; My Python-Programming Projects</title>
     
   <link rel="stylesheet" href="_static/css/index.73d71520a4ca3b99cfee5594769eaaae.css">
 
@@ -57,8 +57,6 @@
     <script async="async" src="_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="genindex.html" />
     <link rel="search" title="Search" href="search.html" />
-    <link rel="next" title="Lab_1" href="Project_2_Gradient_decent.html" />
-    <link rel="prev" title="Content with notebooks" href="notebooks.html" />
 
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="en" />
@@ -95,7 +93,7 @@
   </a>
  </li>
 </ul>
-<ul class="current nav sidenav_l1">
+<ul class="nav sidenav_l1">
  <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="content.html">
    Content in Jupyter Book
@@ -115,23 +113,23 @@
   <i class="fas fa-chevron-down">
   </i>
  </li>
- <li class="toctree-l1 current active">
-  <a class="current reference internal" href="#">
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_1_math_calculation.html">
    2I
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="#c">
+  <a class="reference internal" href="Project_1_math_calculation.html#c">
    3C
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="#id1">
+  <a class="reference internal" href="Project_1_math_calculation.html#id1">
    3C-聯立方程式求解
   </a>
  </li>
  <li class="toctree-l1">
-  <a class="reference internal" href="#a-2">
+  <a class="reference internal" href="Project_1_math_calculation.html#a-2">
    4A-聯立方程式求解_2
   </a>
  </li>
@@ -190,7 +188,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="_sources/Project_1_math_calculation.ipynb"><button type="button"
+        <a class="dropdown-buttons" href="_sources/Project_9_population-checkpoint.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.ipynb</button></a>
         <!-- Download PDF via print -->
@@ -210,7 +208,7 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FProject_1_math_calculation.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/executablebooks/jupyter-book/issues/new?title=Issue%20on%20page%20%2FProject_9_population-checkpoint.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
         
@@ -231,7 +229,7 @@
         aria-label="Launch interactive content"><i class="fas fa-rocket"></i></button>
     <div class="dropdown-buttons">
         
-        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Project_1_math_calculation.ipynb"><button type="button"
+        <a class="binder-button" href="https://mybinder.org/v2/gh/executablebooks/jupyter-book/master?urlpath=tree/docs/Project_9_population-checkpoint.ipynb"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Launch Binder" data-toggle="tooltip"
                 data-placement="left"><img class="binder-button-logo"
                     src="_static/images/logo_binder.svg"
@@ -252,27 +250,7 @@
             <i class="fas fa-list"></i> Contents
         </div>
         <nav id="bd-toc-nav">
-            <ul class="nav section-nav flex-column">
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#">
-   2I
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#c">
-   3C
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#id1">
-   3C-聯立方程式求解
-  </a>
- </li>
- <li class="toc-h1 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#a-2">
-   4A-聯立方程式求解_2
-  </a>
- </li>
+            <ul class="simple nav section-nav flex-column">
 </ul>
 
         </nav>
@@ -284,109 +262,117 @@
         
               <div>
                 
-  <div class="section" id="i">
-<h1>2I<a class="headerlink" href="#i" title="Permalink to this headline">¶</a></h1>
-<div class="cell docutils container">
+  <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">from</span> <span class="nn">sympy.solvers</span> <span class="kn">import</span> <span class="n">solve</span>
-<span class="kn">from</span> <span class="nn">sympy.core</span> <span class="kn">import</span> <span class="n">sympify</span>
-<span class="n">ans</span><span class="o">=</span><span class="n">solve</span><span class="p">(</span><span class="n">sympify</span><span class="p">(</span><span class="s1">&#39;Eq((x+2)*(x-3),(x-5)*(x-6))&#39;</span><span class="p">))</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The solve to the question is:&#39;</span><span class="p">,</span><span class="n">ans</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="n">h</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">175</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="mi">10</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">5000</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+<span class="n">w</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">random</span><span class="o">.</span><span class="n">normal</span><span class="p">(</span><span class="n">loc</span><span class="o">=</span><span class="mi">60</span><span class="p">,</span><span class="n">scale</span><span class="o">=</span><span class="mi">15</span><span class="p">,</span><span class="n">size</span><span class="o">=</span><span class="mi">5000</span><span class="p">),</span><span class="mi">1</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">h</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;----------&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">w</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;----------&#39;</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The solve to the question is: [18/5]
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[188.2 194.2 179.1 ... 149.  181.9 171.8]
+----------
+[48.8 57.9 54.6 ... 34.4 68.2 81.2]
+----------
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="c">
-<h1>3C<a class="headerlink" href="#c" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">math</span>
-<span class="kn">from</span> <span class="nn">sympy.solvers</span> <span class="kn">import</span> <span class="n">solve</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">Symbol</span>
-<span class="n">x</span><span class="o">=</span><span class="n">Symbol</span><span class="p">(</span><span class="s1">&#39;x&#39;</span><span class="p">)</span>
-<span class="n">key</span><span class="o">=</span><span class="n">solve</span><span class="p">([</span><span class="mi">10</span><span class="o">-</span><span class="mi">2</span><span class="o">*</span><span class="n">x</span><span class="o">-</span><span class="mi">6</span><span class="p">],</span><span class="nb">list</span><span class="o">=</span><span class="kc">False</span><span class="p">)</span>
-<span class="n">ans</span><span class="o">=</span><span class="n">math</span><span class="o">.</span><span class="n">fabs</span><span class="p">(</span><span class="n">key</span><span class="p">[</span><span class="n">x</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The solve to the question is:&#39;</span><span class="p">,</span><span class="n">ans</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">m_height</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">l_height</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">m_weight</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">max</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">l_weight</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">min</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;身高範圍:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;最高身高:&#39;</span><span class="p">,</span><span class="n">m_height</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;最矮身高&#39;</span><span class="p">,</span><span class="n">l_height</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;-------------------&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;體重範圍:&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;最肥體重:&#39;</span><span class="p">,</span><span class="n">m_weight</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;最輕體重:&#39;</span><span class="p">,</span><span class="n">l_weight</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>The solve to the question is: 2.0
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>身高範圍:
+最高身高: 210.3
+最矮身高 136.5
+-------------------
+體重範圍:
+最肥體重: 119.7
+最輕體重: -3.0
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="id1">
-<h1>3C-聯立方程式求解<a class="headerlink" href="#id1" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#4*x+3*y-4,2*x+2*y-2*z-0,5*x+3*y+z+2</span>
-<span class="n">eq1</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="n">eq2</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="n">eq3</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">sympy.solvers</span> <span class="kn">import</span> <span class="n">solve</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
-<span class="n">x</span><span class="p">,</span><span class="n">y</span><span class="p">,</span><span class="n">z</span><span class="o">=</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;x,y,z&#39;</span><span class="p">)</span>
-<span class="n">ans</span><span class="o">=</span><span class="n">solve</span><span class="p">([</span><span class="n">eq1</span><span class="p">,</span><span class="n">eq2</span><span class="p">,</span><span class="n">eq3</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The solve to the question is:&#39;</span><span class="p">,</span><span class="n">ans</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#average calculation</span>
+<span class="n">avr_height</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">))</span>
+<span class="n">avr_weight</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">mean</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;平均身高:&#39;</span><span class="p">,</span><span class="n">avr_height</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;平均體重:&#39;</span><span class="p">,</span><span class="n">avr_weight</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output traceback highlight-ipythontb notranslate"><div class="highlight"><pre><span></span><span class="gt">---------------------------------------------------------------------------</span>
-<span class="ne">StdinNotImplementedError</span><span class="g g-Whitespace">                  </span>Traceback (most recent call last)
-<span class="o">&lt;</span><span class="n">ipython</span><span class="o">-</span><span class="nb">input</span><span class="o">-</span><span class="mi">3</span><span class="o">-</span><span class="n">dea8e18d9ab0</span><span class="o">&gt;</span> <span class="ow">in</span> <span class="o">&lt;</span><span class="n">module</span><span class="o">&gt;</span>
-<span class="g g-Whitespace">      </span><span class="mi">1</span> <span class="c1">#4*x+3*y-4,2*x+2*y-2*z-0,5*x+3*y+z+2</span>
-<span class="ne">----&gt; </span><span class="mi">2</span> <span class="n">eq1</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">3</span> <span class="n">eq2</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">4</span> <span class="n">eq3</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="g g-Whitespace">      </span><span class="mi">5</span> <span class="kn">from</span> <span class="nn">sympy.solvers</span> <span class="kn">import</span> <span class="n">solve</span>
-
-<span class="nn">C:\Anaconda3\lib\site-packages\ipykernel\kernelbase.py</span> in <span class="ni">raw_input</span><span class="nt">(self, prompt)</span>
-<span class="g g-Whitespace">    </span><span class="mi">855</span>         <span class="s2">&quot;&quot;&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">856</span><span class="s2">         if not self._allow_stdin:</span>
-<span class="ne">--&gt; </span><span class="mi">857</span><span class="s2">             raise StdinNotImplementedError(</span>
-<span class="g g-Whitespace">    </span><span class="mi">858</span><span class="s2">                 &quot;raw_input was called, but this frontend does not support input requests.&quot;</span>
-<span class="g g-Whitespace">    </span><span class="mi">859</span><span class="s2">             )</span>
-
-<span class="ne">StdinNotImplementedError</span>: raw_input was called, but this frontend does not support input requests.
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>平均身高: 175.0
+平均體重: 60.0
 </pre></div>
 </div>
 </div>
 </div>
-</div>
-<div class="section" id="a-2">
-<h1>4A-聯立方程式求解_2<a class="headerlink" href="#a-2" title="Permalink to this headline">¶</a></h1>
 <div class="cell docutils container">
 <div class="cell_input docutils container">
-<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#2*a+2*b-c+d-4,4*a+3*b-c+2*d-6,8*a+5*b-3*c+4*d-12,3*a+3*b-2*c+2*d-6</span>
-<span class="n">eq1</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="n">eq2</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="n">eq3</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="n">eq4</span><span class="o">=</span><span class="nb">input</span><span class="p">(</span><span class="s1">&#39;enter an equation:&#39;</span><span class="p">)</span>
-<span class="kn">from</span> <span class="nn">sympy.solvers</span> <span class="kn">import</span> <span class="n">solve</span>
-<span class="kn">from</span> <span class="nn">sympy</span> <span class="kn">import</span> <span class="n">symbols</span>
-<span class="n">a</span><span class="p">,</span><span class="n">b</span><span class="p">,</span><span class="n">c</span><span class="p">,</span><span class="n">d</span><span class="o">=</span><span class="n">symbols</span><span class="p">(</span><span class="s1">&#39;a,b,c,d&#39;</span><span class="p">)</span>
-<span class="n">ans</span><span class="o">=</span><span class="n">solve</span><span class="p">([</span><span class="n">eq1</span><span class="p">,</span><span class="n">eq2</span><span class="p">,</span><span class="n">eq3</span><span class="p">,</span><span class="n">eq4</span><span class="p">])</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The solve to the question is:&#39;</span><span class="p">,</span><span class="n">ans</span><span class="p">)</span>
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#medium number</span>
+<span class="n">m_h</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="n">m_w</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">median</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;身高中位數:&#39;</span><span class="p">,</span><span class="n">m_h</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;體重中位數:&#39;</span><span class="p">,</span><span class="n">m_w</span><span class="p">)</span>
 </pre></div>
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>enter an equation:2*a+2*b-c+d-4
-enter an equation:4*a+3*b-c+2*d-6
-enter an equation:8*a+5*b-3*c+4*d-12
-enter an equation:3*a+3*b-2*c+2*d-6
-The solve to the question is: {a: 1, b: 1, c: -1, d: -1}
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>身高中位數: 174.8
+體重中位數: 60.2
 </pre></div>
 </div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="c1">#standard division</span>
+<span class="n">s_h</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">))</span>
+<span class="n">s_w</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">around</span><span class="p">(</span><span class="n">np</span><span class="o">.</span><span class="n">std</span><span class="p">(</span><span class="n">w</span><span class="p">,</span><span class="n">axis</span><span class="o">=</span><span class="kc">None</span><span class="p">))</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;身高標準差:&#39;</span><span class="p">,</span><span class="n">s_h</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;體重標準差:&#39;</span><span class="p">,</span><span class="n">s_w</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>身高標準差: 10.0
+體重標準差: 15.0
+</pre></div>
+</div>
+</div>
+</div>
+<div class="cell docutils container">
+<div class="cell_input docutils container">
+<div class="highlight-ipython3 notranslate"><div class="highlight"><pre><span></span><span class="n">h_w</span><span class="o">=</span><span class="n">np</span><span class="o">.</span><span class="n">corrcoef</span><span class="p">(</span><span class="n">h</span><span class="p">,</span><span class="n">w</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">h_w</span><span class="p">)</span>
+</pre></div>
+</div>
+</div>
+<div class="cell_output docutils container">
+<div class="output stream highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>[[ 1.         -0.01250903]
+ [-0.01250903  1.        ]]
+</pre></div>
 </div>
 </div>
 </div>
@@ -419,8 +405,6 @@ The solve to the question is: {a: 1, b: 1, c: -1, d: -1}
     
     <div class='prev-next-bottom'>
         
-    <a class='left-prev' id="prev-link" href="notebooks.html" title="previous page">Content with notebooks</a>
-    <a class='right-next' id="next-link" href="Project_2_Gradient_decent.html" title="next page">Lab_1</a>
 
     </div>
     <footer class="footer mt-5 mt-md-0">
