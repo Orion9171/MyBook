@@ -6,13 +6,15 @@
   sections:
     - file: markdown
     - file: notebooks
-- file: Project_1_math_calculation
-- file: Project_2_Gradient_decent
-- file: Project_3_lottery
-- file: Project_4_House price & wine
-- file: Project_5_Identity-V
-- file: Project_6_Matplotlib
-- file: Project_7_Test Pandas
-- file: Project_8_Test-Pandas-2
-- file: Project_9_population
-- file: Machine Learning-Diabetes_prediction
+  sections:
+    - file: Project_1_math_calculation
+    - file: Project_2_Gradient_decent
+    - file: Project_3_lottery
+    - file: Project_4_House price & wine
+    - file: Project_5_Identity-V
+    - file: Project_6_Matplotlib
+    - file: Project_7_Test Pandas
+    - file: Project_8_Test-Pandas-2
+    - file: Project_9_population
+    - file: Machine Learning-Diabetes_prediction
+    - file: Machine Learning_2-Cancer
