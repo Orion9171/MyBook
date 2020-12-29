@@ -96,59 +96,89 @@
  </li>
 </ul>
 <ul class="current nav sidenav_l1">
- <li class="toctree-l1 current active collapsible-parent">
+ <li class="toctree-l1 collapsible-parent">
   <a class="reference internal" href="content.html">
    Content in Jupyter Book
   </a>
-  <ul class="current collapse-ul">
+  <ul class="collapse-ul">
    <li class="toctree-l2">
-    <a class="reference internal" href="Project_1_math_calculation.html">
-     2I
+    <a class="reference internal" href="markdown.html">
+     Markdown Files
     </a>
    </li>
    <li class="toctree-l2">
-    <a class="reference internal" href="Project_1_math_calculation.html#c">
-     3C
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Project_1_math_calculation.html#id1">
-     3C-聯立方程式求解
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Project_1_math_calculation.html#a-2">
-     4A-聯立方程式求解_2
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Project_2_Gradient_decent.html">
-     Lab_1
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Project_2_Gradient_decent.html#lab-2">
-     Lab_2
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Project_2_Gradient_decent.html#lab-3">
-     Lab_3
-    </a>
-   </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Linear Prediction
-    </a>
-   </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="Machine%20Learning_2-Cancer.html">
-     BreastCancer_Classification
+    <a class="reference internal" href="notebooks.html">
+     Content with notebooks
     </a>
    </li>
   </ul>
   <i class="fas fa-chevron-down">
   </i>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_1_math_calculation.html">
+   2I
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_1_math_calculation.html#c">
+   3C
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_1_math_calculation.html#id1">
+   3C-聯立方程式求解
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_1_math_calculation.html#a-2">
+   4A-聯立方程式求解_2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_2_Gradient_decent.html">
+   Lab_1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_2_Gradient_decent.html#lab-2">
+   Lab_2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_2_Gradient_decent.html#lab-3">
+   Lab_3
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_3_lottery.html">
+   Lab 1
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_3_lottery.html#lab2">
+   Lab2
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_3_lottery.html#id1">
+   假設檢定
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Project_3_lottery.html#id2">
+   雙樣本檢定
+  </a>
+ </li>
+ <li class="toctree-l1 current active">
+  <a class="current reference internal" href="#">
+   Linear Prediction
+  </a>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="Machine%20Learning_2-Cancer.html">
+   BreastCancer_Classification
+  </a>
  </li>
 </ul>
 
@@ -742,39 +772,39 @@ memory usage: 34.7 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([ 83., 111., 102., 109., 131., 232., 252., 245., 181., 142., 170.,
-       248., 258., 220.,  80., 116., 103., 139., 182.,  91., 276.,  68.,
-        92., 101., 180., 168., 113., 139.,  55., 144., 235., 158., 198.,
-       126.,  53., 156., 233., 134.,  87., 115., 189.,  52., 242.,  84.,
-        97., 171., 121., 127., 259.,  55.,  31., 191., 164.,  88., 174.,
-        95., 214., 233., 183., 265.,  71.,  63., 270., 241., 214., 242.,
-       246., 150., 217., 131., 272., 196., 135., 141.,  97., 199.,  65.,
-       232., 120., 178., 140., 150., 310., 220., 262., 150.,  53.,  63.,
-        67.,  96., 172., 200.,  42., 109., 158., 336., 107.,  83., 144.,
-        53., 249., 190.,  91.,  59., 108., 142., 144., 113., 170., 253.,
-       248., 237.,  52.,  51.,  90., 258., 201.,  49.,  84., 198., 118.,
-        59., 122., 160., 152., 200., 252., 142., 281., 264.,  69.,  88.,
-       123., 200., 163., 174.,  91.,  75., 107.,  94., 178.,  64., 306.,
-       143.,  49., 208., 178., 209., 216., 217., 110.,  90., 155., 138.,
-       142., 144.,  71., 310.,  61.,  85., 268., 257., 151.,  78., 332.,
-       151.,  60.,  74., 190., 186., 259., 292., 198.,  99., 275., 178.,
-       206.,  70., 263., 296., 206., 163., 110., 151.,  55., 170.,  47.,
-        49., 175., 102., 168., 230., 150.,  73., 128.,  78., 185., 132.,
-       252., 137., 196.,  48.,  50., 172.,  81., 177., 311., 192., 277.,
-        93.,  64., 115., 272., 104., 295., 210.,  66., 237., 275.,  54.,
-       116.,  77.,  69.,  72., 293., 173.,  77., 265., 134.,  67., 220.,
-       246., 280., 215.,  39., 155.,  48., 288.,  71.,  40., 135., 129.,
-       310.,  72.,  74., 292., 182.,  48., 229.,  86.,  96., 104.,  63.,
-        55., 202., 124., 225.,  98.,  85., 270., 129.,  75., 180.,  78.,
-       191., 125.,  25., 195., 274., 263., 273.,  72.,  90., 248., 303.,
-        66., 185., 113.,  68., 346., 281., 258., 281.,  94.,  65.,  37.,
-       182., 118.,  42., 143.,  81.,  58., 200., 136., 222., 243.,  89.,
-       279.,  77., 275.,  52., 341., 152., 111., 104., 200., 220., 197.,
-       102.,  43., 297.,  94.,  65., 219., 164.,  84.,  88., 242., 128.,
-        39.,  71., 111., 154.,  72.,  79., 178.,  85.,  87.,  61., 137.,
-       145., 187., 141.,  84., 109.,  69., 321., 283., 140., 146.,  97.,
-       221., 179., 127., 277.,  64., 245., 167.,  51., 122., 259., 160.,
-        63.])
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>array([293.,  87.,  91.,  98., 166.,  64.,  83.,  91.,  84., 265., 281.,
+        52.,  90., 129.,  67.,  90.,  75.,  64.,  70., 144., 104., 184.,
+        88., 201., 281., 248., 163., 160., 178., 245.,  74., 346., 125.,
+       264., 259.,  42., 121., 178., 128., 129., 129.,  85., 164., 181.,
+       270., 135., 214., 131., 109.,  49., 262., 141.,  80., 170., 272.,
+        51.,  69.,  84., 134., 152.,  78., 220., 109., 158., 111.,  72.,
+        55., 200.,  72., 192., 236.,  55.,  60.,  52., 102., 308., 170.,
+       138.,  86., 124.,  64., 128., 160.,  53.,  39., 225., 174., 306.,
+       109., 167.,  65.,  57.,  88., 295., 115., 258.,  45.,  77., 118.,
+        54.,  79., 296., 196., 127., 186., 183., 237.,  94., 262.,  71.,
+       142., 139.,  68., 151., 185., 144., 111., 147., 134.,  94., 100.,
+       107.,  53., 190., 217., 132.,  78., 206., 179.,  50., 242.,  93.,
+        42., 241., 310.,  81., 113., 142., 116.,  84., 302.,  94.,  92.,
+       101., 178., 297., 209., 168., 275., 138., 311., 229., 142.,  44.,
+        58.,  77., 249., 220., 248.,  52., 150.,  49., 175., 283.,  99.,
+        83.,  71.,  72.,  77., 273.,  96., 243., 190., 288., 280.,  59.,
+        42., 179.,  88.,  63., 198., 219.,  97., 277., 155.,  83., 121.,
+       217.,  31., 243.,  89.,  65.,  85.,  77.,  71.,  96.,  88., 270.,
+       107.,  72., 168., 242., 232., 235., 253., 196.,  96., 103., 182.,
+       252., 122.,  67., 173.,  59., 252., 321., 151.,  61.,  96., 101.,
+       197., 110., 118.,  97., 202.,  66.,  70., 114., 199., 274., 233.,
+       198., 127.,  87., 144., 272., 164.,  51., 144., 140., 126., 198.,
+       108.,  48.,  84., 153., 135., 115., 257., 263., 148., 110.,  85.,
+        63.,  43., 171.,  71.,  40., 191., 143., 310., 150., 152.,  37.,
+       292., 210.,  59., 142., 222., 116.,  51., 277.,  74., 172., 261.,
+       178., 155., 120., 154., 200.,  81., 113., 263., 128., 145.,  97.,
+       158., 232., 103.,  53.,  85.,  95.,  60., 246.,  65.,  90., 172.,
+        68.,  75., 215., 113., 122., 208., 180., 216.,  97., 252., 245.,
+       230., 246., 141., 202., 336.,  59., 118.,  61.,  68.,  66., 265.,
+       132., 332., 174., 258., 206., 200., 102., 237.,  48., 173., 197.,
+       202., 214.,  95., 182., 275., 220.,  39., 150., 178.,  63., 268.,
+       212., 259.,  65., 185.,  53., 310., 235., 219., 111., 317., 146.,
+       124.])
 </pre></div>
 </div>
 </div>
@@ -812,7 +842,7 @@ memory usage: 34.7 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>3086.1357639916314
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>2829.6354194511005
 </pre></div>
 </div>
 </div>
@@ -825,7 +855,7 @@ memory usage: 34.7 KB
 </div>
 </div>
 <div class="cell_output docutils container">
-<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>45
+<div class="output text_plain highlight-myst-ansi notranslate"><div class="highlight"><pre><span></span>52
 </pre></div>
 </div>
 </div>
