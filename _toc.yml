@@ -10,7 +10,9 @@
 - file: Project_2_Gradient_decent
 - file: Project_3_lottery
 - file: Project_4_House price & wine
+- file: Project_5_HousePrice_LinearRegression
 - file: Project_5_Identity-V-checkpoint
+- file: Project_5-2_ MatrixEquationSolution
 - file: Project_6_Matplotlib-checkpoint
 - file: Project_7_Test Pandas
 - file: Project_8_Test-Pandas-2
@@ -18,3 +20,4 @@
 - file: Machine Learning-Diabetes_prediction
 - file: Machine Learning_2-Cancer
 - file: Machine Learning-Flower
+- file: matrix_practice
