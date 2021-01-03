@@ -1,6 +1,8 @@
 #!/usr/bin/env python
 # coding: utf-8
 
+# # matrix_practice
+
 # In[1]:
 
 
@@ -31,10 +33,4 @@ z_surf = x_surf * 5 + y_surf * 2
 from matplotlib import cm
 ax.plot_surface(x_surf,y_surf,z_surf,cmap = cm.hot)
 plt.show()
-
-
-# In[ ]:
-
-
-
 
