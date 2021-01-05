@@ -11,13 +11,11 @@
 - file: Project_3_lottery
 - file: Project_4_House price & wine
 - file: Project_5_HousePrice_LinearRegression
-- file: Project_5_Identity-V-checkpoint
 - file: Project_5-2_ MatrixEquationSolution
-- file: Project_6_Matplotlib-checkpoint
-- file: Project_7_Test Pandas
-- file: Project_8_Test-Pandas-2
-- file: Project_9_population-checkpoint
-- file: Project_10_matrix_practice
+- file: Project_6_Test Pandas
+- file: Project_7_Test-Pandas-2
+- file: Project_8_population-checkpoint
+- file: Project_9_matrix_practice
 - file: Machine Learning-Diabetes_prediction
 - file: Machine Learning_2-Cancer
 - file: MachineLearning_3-Linnerud
